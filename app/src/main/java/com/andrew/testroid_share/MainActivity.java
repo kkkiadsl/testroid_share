@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 String city_text =  city.getSelectedItem().toString();
                 String level_text =  level.getSelectedItem().toString();
 
-                String subject = "스탬프투어";
-                String text = "여행자님은 " + city_text + " 여행중입니다.\n" + "현재 등급은 " + level_text + "입니다.\n"
+                String subject = "스탬프 투어";
+                String text = "여행자님은 " + city_text + " 여행중입니다.\n" + "현재 등급은 " + level_text + "입니다.\n\n"
                         +"https://play.google.com/store/apps/details?id=com.thatzit.kjw.stamptour_kyj_client";
 
                 targetedShareIntents = new ArrayList<>();
