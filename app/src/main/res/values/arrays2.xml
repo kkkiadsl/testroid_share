@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <resources>
+        <string-array name="level">
+            <item>초급자</item>
+            <item>중급자</item>
+            <item>상급자</item>
+            <item>달인</item>
+            <item>마스터</item>
+        </string-array>
+
+</resources>
