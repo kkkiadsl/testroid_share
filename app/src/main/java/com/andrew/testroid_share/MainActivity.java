@@ -15,6 +15,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private Button shared;
+    private Button page;
     private Spinner city;
     private Spinner level;
     private List targetedShareIntents;
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
         shared = (Button)findViewById(R.id.shared);
         city = (Spinner)findViewById(R.id.city);
         level = (Spinner)findViewById(R.id.level);
+        page = (Button)findViewById(R.id.page);
+
+
+        page.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent page = new Intent(getApplication(), LoginActivity.class );
+                startActivity(page);
+            }
+        });
 
 
         shared.setOnClickListener(new View.OnClickListener() {
