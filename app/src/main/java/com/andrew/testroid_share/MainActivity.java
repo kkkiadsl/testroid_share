@@ -15,6 +15,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private Button shared;
+    private Button page;
     private Spinner city;
     private Spinner level;
     private List targetedShareIntents;
@@ -26,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
         shared = (Button)findViewById(R.id.shared);
         city = (Spinner)findViewById(R.id.city);
         level = (Spinner)findViewById(R.id.level);
+        page = (Button)findViewById(R.id.page);
+
+
+        page.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent page = new Intent(getApplication(), LoginActivity.class );
+                startActivity(page);
+            }
+        });
 
 
         shared.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 String city_text =  city.getSelectedItem().toString();
                 String level_text =  level.getSelectedItem().toString();
 
-                String subject = "스탬프투어";
-                String text = "여행자님은 " + city_text + " 여행중입니다.\n" + "현재 등급은 " + level_text + "입니다.\n"
+                String subject = "스탬프 투어";
+                String text = "여행자님은 " + city_text + " 여행중입니다.\n" + "현재 등급은 " + level_text + "입니다.\n\n"
                         +"https://play.google.com/store/apps/details?id=com.thatzit.kjw.stamptour_kyj_client";
 
                 targetedShareIntents = new ArrayList<>();
