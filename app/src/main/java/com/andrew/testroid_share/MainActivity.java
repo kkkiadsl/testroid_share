@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner city;
     private Spinner level;
     private List targetedShareIntents;
-
+asdjasdpasjd
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
